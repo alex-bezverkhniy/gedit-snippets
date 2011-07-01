@@ -39,14 +39,14 @@
   </snippet>
   <snippet>
     <text><![CDATA[${1:expr} match {
-	case ${2:case} => $0
+	case ${2:case} => $3
 }]]></text>
     <tag>match</tag>
     <description>match</description>
   </snippet>
   <snippet>
     <text><![CDATA[if (${1:condition}) {
-	$2
+	$0
 }]]></text>
     <tag>if</tag>
     <description>if ...</description>
@@ -66,7 +66,7 @@
     <description>ternary</description>
   </snippet>
   <snippet>
-    <text><![CDATA[case class ($0)]]></text>
+    <text><![CDATA[case class ${1:name} ($2)]]></text>
     <tag>case</tag>
     <description>case class</description>
   </snippet>
